@@ -1,0 +1,148 @@
+
+#loadingScreen{ 
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{ 
+    overflow: hidden;
+}
+.sideNav {
+    position: fixed;
+    left    : -220.031;
+    top     : 0;
+    /* background: red; */
+    z-index:999 ; 
+
+}
+
+.internalNav {
+    background-color: black;
+    padding         : 20px 10px;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+    width           : 50%;
+    padding-left    : 20px;
+    height: 100vh;
+
+}
+
+ul li {
+    padding-top: 50px;
+    cursor     : pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    color          : white;
+}
+
+ul li a:hover {
+    color: white;
+}
+
+.externalBar {
+    background-color: white;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    align-items    : center;
+
+    
+
+}
+
+.logo img {
+    width: 50px;
+}
+
+#searchSection input {
+    background-color: transparent;
+    border-top      : none;
+    border-left     : none;
+    border-right    : none;
+    text-align      : center;
+    color           : white;
+}
+
+#searchSection,#categorySection,#areaSection,#ingredientsSection,#contactSection {
+    display: none;
+}
+
+::placeholder {
+    color  : white;
+    opacity: 1;
+}
+
+.search-content , .category-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-overlay {
+    background-color: rgba(255, 255, 255, 0.473);
+    position        : absolute;
+    top             : 100%;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    transition      : all 1s;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+
+.image-overlay-Category{ 
+    background-color: rgba(255, 255, 255, 0.473);
+    position        : absolute;
+    top             : 100%;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    transition      : all 1s;
+    display         : flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items     : center;
+    color: black;
+    text-align: center;
+    }
+
+    .search-content:hover .image-overlay ,.category-content:hover .image-overlay-Category {
+        top: 0;
+    }
+
+    .category-content a{ 
+        text-decoration: none;
+        color: black;
+        font-weight: 900;
+        padding-top: 50px;
+    }
+
+    #contactSection input {
+        background-color: transparent;
+        border-top      : none;
+        border-left     : none;
+        border-right    : none;
+        text-align      : center;
+        color           : white;
+    }
+
+#contactSection .alert{ 
+    display: none;
+}
+
+a{ 
+    text-decoration: none;
+    color: white;
+}
+#recipesDetails{ 
+    flex-wrap: wrap;
+}
